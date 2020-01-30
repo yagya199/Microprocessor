@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.minor.microprocessor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Smiley"/>
+        <activity android:name=".Video" />
+        <activity android:name=".Control" />
+        <activity android:name=".Branching" />
+        <activity android:name=".Logical" />
+        <activity android:name=".Arithmetic" />
+        <activity android:name=".DataTransfer" />
+        <activity android:name=".InstructionSet" />
+        <activity android:name=".Architecture" />
+        <activity android:name=".Introduction" />
+        <activity android:name=".Tutorial" />
+        <activity android:name=".Books" />
+        <activity android:name=".Program" />
+        <activity android:name=".program1" />
+        <activity android:name=".program2" />
+        <activity android:name=".program3" />
+        <activity android:name=".program4" />
+        <activity android:name=".program5" />
+        <activity android:name=".program6" />
+        <activity android:name=".program7" />
+        <activity android:name=".problem8"/>
+        <activity android:name=".program9"/>
+        <activity android:name=".program10"/>
+        <activity android:name=".program11"/>
+        <activity android:name=".memories" />
+        <activity android:name=".addressingmode" />
+        <activity android:name=".comparison"/>
+        <activity android:name=".intro8086"/>
+        <activity android:name=".timingdiagram"/>
+        <activity android:name=".interrupt" />
+        <activity android:name=".Topic" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

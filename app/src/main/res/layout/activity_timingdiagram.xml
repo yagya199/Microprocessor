@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timingdiagram"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/mem1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td1"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mem2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem1"
+                        android:text="@string/td2"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/mem4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td3"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mem5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem4"
+                        android:text="@string/td4"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/mem6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem5"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/td5"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/mem7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem6"
+                        android:text="@string/td6"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/mem8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem7"
+                        android:text="@string/td7"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem8"
+                        android:text="@string/td8"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/mem10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mem9"
+                        android:text="@string/td9"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/mem11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/td10"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                android:id="@+id/mem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/td1" android:layout_below="@id/mem11"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"/>
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/mem13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td11"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/mem14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td12"
+                        android:layout_below="@+id/mem13"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:id="@+id/mem15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/td2"
+                        android:layout_below="@id/mem14"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/mem16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td13"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/mem17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/td3"
+                        android:layout_below="@id/mem16"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"/>
+                    <TextView
+                        android:id="@+id/mem18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td14"
+                        android:layout_below="@+id/mem17"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td15"
+                        android:layout_below="@+id/mem18"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td16"
+                        android:layout_below="@+id/mem19"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td17"
+                        android:layout_below="@+id/mem20"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td18"
+                        android:layout_below="@+id/mem21"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td19"
+                        android:layout_below="@+id/mem22"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td20"
+                        android:layout_below="@+id/mem23"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td21"
+                        android:layout_below="@+id/mem24"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/mem26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td22"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/mem27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/td4"
+                        android:layout_below="@id/mem26"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"/>
+                    <TextView
+                        android:id="@+id/mem28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td23"
+                        android:layout_below="@+id/mem27"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/mem29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td24"
+                        android:layout_below="@+id/mem28"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td25"
+                        android:layout_below="@+id/mem29"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td26"
+                        android:layout_below="@+id/mem30"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td27"
+                        android:layout_below="@+id/mem31"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td28"
+                        android:layout_below="@+id/mem32"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td29"
+                        android:layout_below="@+id/mem33"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td30"
+                        android:layout_below="@+id/mem34"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/mem36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td31"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/mem37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/td5"
+                        android:layout_below="@id/mem36"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"/>
+                    <TextView
+                        android:id="@+id/mem38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td32"
+                        android:layout_below="@+id/mem37"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/mem39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td33"
+                        android:layout_below="@+id/mem38"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td34"
+                        android:layout_below="@+id/mem39"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td35"
+                        android:layout_below="@+id/mem40"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td36"
+                        android:layout_below="@+id/mem41"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td37"
+                        android:layout_below="@+id/mem42"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td38"
+                        android:layout_below="@+id/mem43"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td39"
+                        android:layout_below="@+id/mem44"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="2dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/mem46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td40"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/mem47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/td6"
+                        android:layout_below="@id/mem46"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"/>
+                    <TextView
+                        android:id="@+id/mem48"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td41"
+                        android:layout_below="@+id/mem47"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/mem49"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td42"
+                        android:layout_below="@+id/mem48"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td43"
+                        android:layout_below="@+id/mem49"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td44"
+                        android:layout_below="@+id/mem50"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td45"
+                        android:layout_below="@+id/mem51"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td46"
+                        android:layout_below="@+id/mem52"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td47"
+                        android:layout_below="@+id/mem53"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/mem55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/td48"
+                        android:layout_below="@+id/mem54"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

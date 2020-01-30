@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Architecture">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/architecture"/>
+
+<Button
+    android:id="@+id/accumulator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/photo_view"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:text="Accumulator"
+    android:onClick="action"
+    android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/alu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/photo_view"
+        android:text="ALU"
+        android:onClick="action"
+        android:layout_marginLeft="120dp"
+
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/photo_view"
+        android:text="Timing and Control Unit"
+        android:layout_marginLeft="220dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accumulator"
+        android:text="General Purpose Register"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/accumulator"
+        android:text="Program Counter"
+        android:layout_marginLeft="200dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counter"
+        android:text="Stack Pointer"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counter"
+        android:layout_marginTop="10dp"
+        android:text="Increment and Decrement Register"
+        android:layout_marginLeft="120dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginTop="10dp"
+        android:text="Flag Register"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/temporary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginTop="10dp"
+        android:text="Temporary Register"
+        android:layout_marginLeft="130dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/buffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temporary"
+        android:text="Address Data Buffer"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/interupt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temporary"
+        android:layout_marginTop="10dp"
+        android:text="Interrupt Control"
+        android:layout_marginLeft="170dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interupt"
+        android:text="Serial input/output Control"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/decoder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serial"
+        android:text="Instruction Register and Decoder"
+        android:layout_margin="10dp"
+        android:onClick="action"
+        android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>

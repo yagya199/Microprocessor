@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "826434627482",
+    "firebase_url": "https://microprocessor-8cbbc.firebaseio.com",
+    "project_id": "microprocessor-8cbbc",
+    "storage_bucket": "microprocessor-8cbbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826434627482:android:ec245f57569b1b658f7c23",
+        "android_client_info": {
+          "package_name": "com.minor.microprocessor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826434627482-r1vc43mebn60ma5eqdl06s3lk0ifdc0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minor.microprocessor",
+            "certificate_hash": "bbba82e120afafdd938e1ad4e5def1c32fdff52c"
+          }
+        },
+        {
+          "client_id": "826434627482-86sc84qrokaofbnnerjej23vb26rcnk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK9IXShEkTcA96zkN4eocwg4Ft2O5km98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826434627482-86sc84qrokaofbnnerjej23vb26rcnk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

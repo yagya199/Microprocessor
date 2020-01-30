@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ccc">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:text="@string/statement4"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/pro2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/program4"
+                        android:textColor="#dd3333"/>
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pro2">
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:layout_column="1"
+                                android:text="@string/ins_4_1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/opc_4_1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_column="3"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/remark_4_1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:layout_column="1"
+                                android:text="@string/ins_4_2"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="3"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/remark_4_2"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:layout_column="1"
+                                android:text="@string/ins_4_3"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/opc_4_3"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="3"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/remark_4_3"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:layout_column="1"
+                                android:text="@string/ins_4_4"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/opc_4_4"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="3"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/remark_4_4"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="2dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:layout_column="1"
+                                android:text="@string/ins_4_5"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="3"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/remark_4_5"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

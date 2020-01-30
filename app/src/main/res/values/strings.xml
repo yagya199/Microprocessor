@@ -1,0 +1,807 @@
+<resources>
+    <string name="app_name">Microprocessor</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Microprocessor</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_rate">Rate Us</string>
+
+    <string name="accumulator">
+<p><b>It is an 8-bit register used to perform arithmetic, logical, I/O
+    and LOAD/STORE operations. It is connected to internal data bus and ALU.</b></p></string>
+
+    <string name="alu">
+        <p><b>
+            It basically performs 8-bit arithmetic operations like +, -, *, / and to perform logical operations like AND, OR, NOT etc. ALU gets inputs from the accumulator and temporary register on which it performs such operations.
+            After processing the necessary operations, the result is stored back in the accumulator.
+
+        </b></p>
+
+    </string>
+
+    <string name="control">
+        <p><b>
+            This unit is responsible for generating timing signals and control signals and also it controls both inside and outside activities of Intel8085microprocessor. Timing and control unit is very important as it synchronizes the registers and flow of data through various registers and other units. It consists of an oscillator and controller sequencer which sends control signals needed for internal and external control of data and other units.
+        </b></p>
+    </string>
+
+    <string name="general">
+        <p><b>
+            B, C, D, E, Hand L are six general purpose registers are there in 8085microprocessor. Each register can hold 8-bit data.
+            They can work in pairs such as BC, DE, and HL to store 16-bit data where HL pair work as a memory pointer.
+        </b></p>
+    </string>
+
+    <string name="counter">
+        <p><b>
+            Program Counter is a 16-bit register used to store the memory address location of the next instruction to be executed. Microprocessor increments
+            the program whenever an instruction is being executed so that the program counter points to the memory address of the next instruction that is going to be executed.
+        </b></p>
+    </string>
+    <string name="stack">
+        <p><b>
+            The stack pointer is also a 16-bit register.
+            It is used as a memory pointer. Stack pointer gets incremented when data is retrieved from the stack which is called pop operation and decremented when data is loaded into the stack that is known as a push operation
+        </b></p>
+    </string>
+
+    <string name="register">
+        <p><b>
+            The 16-bit increment and decrement register are used to increment and decrement the PC value and SP value by 1.
+            Increment or decrement can be performed on any register or a memory location.
+        </b></p>
+    </string>
+
+    <string name="buffer">
+    <p><b>
+        The content of the program counter and stack pointer are loaded into address data buffer and address buffer.
+        These buffers are bi-directional when used for data. The CPU can exchange the desired data with the memory and I/O chips as The memory and I/O chips are connected to these buses. The address data buffer is connected to both external and internal bus which consists of 8 bits.
+    </b></p>
+   </string>
+
+    <string name="temporary">
+        <p><b>
+            temporary register is an 8-bit register, which holds the temporary data of arithmetic and logical operations.
+            This register can only be accessed by the microprocessor and it is completely inaccessible to programmers.
+        </b></p>
+    </string>
+
+    <string name="flag">
+        <p><b>
+            This register is actually a group of flip-flops to give the status of different operations result. When ALU performs an operation,
+            the result is transferred to the internal data bus and the status of the result will be stored in flip-flops.
+        </b></p>
+    </string>
+
+    <string name="interupt">
+        <p><b>
+            When a microprocessor is executing the main program and whenever an interrupt occurs, the microprocessor shifts the control from the main program to process the incoming request.
+            After the request is completed, the control goes back to the main program.
+        </b></p>
+    </string>
+
+    <string name="serial">
+        <p><b>
+            It controls the serial data communication by using these two instructions: SID (Serial input data) and SOD (Serial output data).
+        </b></p>
+    </string>
+
+    <string name="decoder">
+        <p><b>
+            The instruction register is also 8-bit register. the instruction registers are specifically to store the instructions like adding two data’s, moving a data, copying a data etc. that are fetched from memory.
+        </b></p>
+    </string>
+
+
+    <string name="s1">
+        <h1> <p><b><u>Data Transfer</u></b></p></h1>
+    </string>
+    <string name="i11">
+        <p>
+            <b>
+                Move data between registers or between memory and registers
+            </b>
+        </p>
+    </string>
+
+    <string name="s2">
+        <p><b>
+            <u>Arithmetic</u>
+        </b></p>
+    </string>
+    <string name="i21">
+        <p>
+            <b>
+                Add,Subtract,increment,or decrement data in registers or memory
+            </b>
+        </p>
+    </string>
+
+    <string name="s3">
+        <p><b>
+            <u>
+                Logical
+            </u>
+        </b></p>
+    </string>
+
+    <string name="i31">
+        <p>
+            <b>
+                Performs logical operations on data in registers or memory
+            </b>
+        </p>
+    </string>
+
+    <string name="s4">
+        <p><b><u>
+            Branching
+        </u></b></p>
+    </string>
+
+    <string name="i41">
+        <p>
+            <b>
+                Alter normal sequential program flow,either unconditionally or conditionally
+            </b>
+        </p>
+    </string>
+
+    <string name="s5">
+        <p><b>
+            <u>
+                Control
+            </u>
+        </b></p>
+    </string>
+
+    <string name="i51">
+        <p>
+            <b>
+                Performs instructions for input/output port,stack and machine control
+            </b>
+        </p>
+    </string>
+
+
+    //aditya PROGRAM////////////////////////////////////////////////////////
+
+    <string name="program1">program 1:</string>
+    <string name="statement1"><b>Statement:</b> 8085 program to store 8-bit data in memory.</string>
+    <string name="ins_1_1">MVI</string>
+    <string name="ins_1_2">STA</string>
+    <string name="ins_1_3">HLT</string>
+    <string name="opc_1_1">A,52H</string>
+    <string name="opc_1_2">4000H</string>
+    <string name="remark_1_1">[Store 52H in the Accumulator]</string>
+    <string name="remark_1_2">[Copy accumulator contents at address 4000H ]</string>
+    <string name="remark_1_3">[Terminate the program]</string>
+    //program2
+    <string name="program2">program 2:</string>
+    <string name="statement2"><b>Statement:</b> 8085 program to exchange the content of memory locations.</string>
+    <string name="ins_2_1">LDA</string>
+    <string name="ins_2_2">MOV</string>
+    <string name="ins_2_3">LDA</string>
+    <string name="ins_2_4">STA</string>
+    <string name="ins_2_5">MOV</string>
+    <string name="ins_2_6">STA</string>
+    <string name="ins_2_7">HLT</string>
+    <string name="opc_2_1">2000H</string>
+    <string name="opc_2_2">B,A</string>
+    <string name="opc_2_3">4000H</string>
+    <string name="opc_2_4">2000H</string>
+    <string name="opc_2_5">A,B</string>
+    <string name="opc_2_6">4000</string>
+    <string name="remark_2_1">[Get the content of memory location 2000H into accumulator]</string>
+    <string name="remark_2_2">[Save the content into B register]</string>
+    <string name="remark_2_3">[Get the content of memory location 4000H into accumulator]</string>
+    <string name="remark_2_4">[Store the content of accumulator at address 2000H]</string>
+    <string name="remark_2_5">[Get the saved contents back into A register]</string>
+    <string name="remark_2_6">[Store the contents of accumulator at address 4000H]</string>
+    <string name="remark_2_7">[Terminate the program]</string>
+
+    //program 3
+    <string name="program3">program 3:</string>
+    <string name="statement3"><b>Statement:</b> 8085 program to find one\'s complement of a 8-bit number.</string>
+    <string name="ins_3_1">LDA</string>
+    <string name="ins_3_2">CMA</string>
+    <string name="ins_3_3">STA</string>
+    <string name="ins_3_4">HLT</string>
+    <string name="opc_3_1">2000H</string>
+    <string name="opc_3_2">2001H</string>
+    <string name="remark_3_1">[Load contents of 2000H into A]</string>
+    <string name="remark_3_2">[Complement A]</string>
+    <string name="remark_3_3">[Store the result in 2001H]</string>
+    <string name="remark_3_4">[Terminate the program]</string>
+
+    //program 4
+    <string name="program4">program 4:</string>
+    <string name="statement4"><b>Statement:</b> 8085 program to find two\'s complement of a 8-bit number.</string>
+    <string name="ins_4_1">LDA</string>
+    <string name="ins_4_2">CMA</string>
+    <string name="ins_4_3">INR</string>
+    <string name="ins_4_4">STA</string>
+    <string name="ins_4_5">HLT</string>
+    <string name="opc_4_1">2000H</string>
+    <string name="opc_4_3">A</string>
+    <string name="opc_4_4">2001H</string>
+    <string name="remark_4_1">[Load contents of 2000H into  A]</string>
+    <string name="remark_4_2">[Complement A]</string>
+    <string name="remark_4_3">[Increment A]</string>
+    <string name="remark_4_4">[Store the result in 2001H]</string>
+    <string name="remark_4_5">[Terminate the program]</string>
+
+    //program5
+    <string name="program5">program 5:</string>
+    <string name="statement5"><b>Statement:</b> 8085 program to find one\'s complement of a 16-bit number.</string>
+    <string name="ins_5_1">LHLD</string>
+    <string name="ins_5_2">MOV</string>
+    <string name="ins_5_3">CMA</string>
+    <string name="ins_5_4">MOV</string>
+    <string name="ins_5_5">MOV</string>
+    <string name="ins_5_6">CMA</string>
+    <string name="ins_5_7">MOV</string>
+    <string name="ins_5_8">SHLD</string>
+    <string name="ins_5_9">HLT</string>
+    <string name="opc_5_1">2000H</string>
+    <string name="opc_5_2">A,L</string>
+    <string name="opc_5_4">L,A</string>
+    <string name="opc_5_5">A,H</string>
+    <string name="opc_5_7">H,A</string>
+    <string name="opc_5_8">3000H</string>
+    <string name="remark_5_1">[Load H-L pair with operand from 2000H.]</string>
+    <string name="remark_5_2">[Move the lower order from L to A.]</string>
+    <string name="remark_5_3">[Complement A.]</string>
+    <string name="remark_5_4">[Move the result from A to L]</string>
+    <string name="remark_5_5">[Move the higher order from H to A.]</string>
+    <string name="remark_5_6">[Complement A.]</string>
+    <string name="remark_5_7">[Move the result from A to H.]</string>
+    <string name="remark_5_8">[Store the result in 3000H.]</string>
+    <string name="remark_5_9">[Terminate the program.]</string>
+
+    //program6
+    <string name="program6">program 6:</string>
+    <string name="statement6"><b>Statement:</b> 8085 program to find two\'s complement of a 16-bit number.</string>
+    <string name="ins_6_1">LHLD</string>
+    <string name="ins_6_2">MOV</string>
+    <string name="ins_6_3">CMA</string>
+    <string name="ins_6_4">MOV</string>
+    <string name="ins_6_5">MOV</string>
+    <string name="ins_6_6">CMA</string>
+    <string name="ins_6_7">MOV</string>
+    <string name="ins_6_8">SHLD</string>
+    <string name="ins_6_9">HLT</string>
+    <string name="ins_6_10">HLT</string>
+    <string name="opc_6_1">2000H</string>
+    <string name="opc_6_2">A,L</string>
+    <string name="opc_6_4">L,A</string>
+    <string name="opc_6_5">A,H</string>
+    <string name="opc_6_7">H,A</string>
+    <string name="opc_6_8">H</string>
+    <string name="opc_6_9">3000H</string>
+    <string name="remark_6_1">[Load H-L pair with operand from 2000H.]</string>
+    <string name="remark_6_2">[Move the lower order from L to A.]</string>
+    <string name="remark_6_3">[Complement A.]</string>
+    <string name="remark_6_4">[Move the result from A to L]</string>
+    <string name="remark_6_5">[Move the higher order from H to A.]</string>
+    <string name="remark_6_6">[Complement A.]</string>
+    <string name="remark_6_7">[Move the result from A to H.]</string>
+    <string name="remark_6_8">[Increment H-L pair]</string>
+    <string name="remark_6_9">[Store the result]</string>
+    <string name="remark_6_10">[Terminate the program.]</string>
+
+
+
+    //project memories(topics)
+    <string name="heading_mem"><u>Memories</u></string>
+    <string name="line1">-> A memory unit is the collection of storage unit or devices together.</string>
+    <string name="line2">-> The memory unit stores the binary information in the form of bits.</string>
+    <string name="line3">-> Generally,it is classified into two categories:<b>Volatile</b>memory and <b>Non-Volatile</b>memory.</string>
+    <string name="line4"><u>Volatile Memory</u></string>
+    <string name="line5"> It loses its data when power is switched off. For example- ROM,Flash,etc.</string>
+    <string name="line6"><u>Non-Volatile Memory</u></string>
+    <string name="line7"> It is a permanent storage and does not loose any data when power is switched off. For example- SRAM,DRAM,etc</string>
+    <string name="line8"> <u>Memory Hierarchy in a Computer System.</u></string>
+    <string name="line9">a)<u>Main Memory</u></string>
+    <string name="line10"> Memory unit that communicates directly with the CPU(RAM).</string>
+    <string name="line11">b)<u>Auxiliary Memory</u></string>
+    <string name="line12">Device that provide backup storage.For example:Magnetic disks and tapes</string>
+    <string name="line13">c)<u>Cache Memory</u></string>
+    <string name="line14">Special very high speed memory to increase the processing speed(cache RAM).</string>
+
+    //project ineterrupt(topics)
+    <string name="interrupt1"><u> Interruts in 8085</u></string>
+    <string name="interrupt2"> Interrupts are the signal generated by the external devices to request the microprocessor to perform a task. There are 6 pins availabel in 8085 for interrupt,i.e. TRAP, RST 7.5, RST 6.5, RST 5.5, INTR and INTA.</string>
+    <string name="interrupt3"> Interrupt  are classified into following groups based on their parameter:</string>
+    <string name="interrupt4"> 1. Vector Interrupt</string>
+    <string name="interrupt5"> In this type of interrupt, the interrupt address is known to the processor.</string>
+    <string name="interrupt6"><b>Example</b> RST7.5, RST6.5, RST5.5, TRAP.</string>
+    <string name="interrupt7"> 2. Non-Vector Interrupt</string>
+    <string name="interrupt8"> In this type of interrupt. the interrupt address is not known to the processor so, the interrupt address needs to be sent externally by the device to perform interrupts</string>
+    <string name="interrupt9"><b>Example</b> INTR</string>
+    <string name="interrupt10"> 3. Maskable Interrupt</string>
+    <string name="interrupt11"> In this type of interrupt, we can disable the interrupt by writing some instructions into the program.</string>
+    <string name="interrupt12"><b>Example</b> RST7.5, RST6.5, RST5.5.</string>
+    <string name="interrupt13"> 4. Non-Maskable Interrupt</string>
+    <string name="interrupt14"> In this type of interrupt, we cannot disable the interrupt by writing some instructions into the program.</string>
+    <string name="interrupt15"><b>Example</b> TRAP.</string>
+    <string name="interrupt16"> 5. Software Interrupt</string>
+    <string name="interrupt17"> In this type of interrupt,the programmer has to add the instructions into the program to execute the interrupt.</string>
+    <string name="interrupt18"><b>Example</b> RST0, RST1, RST3, RST4, RST5, RST6, RST7.</string>
+    <string name="interrupt19"> 6. Hardware Interrupt</string>
+    <string name="interrupt20"> An external device initiates the hardware interrupts and placing an appropriate signal at the interrupt pin of the processor. If the interrupt is accepted then the processor executes  an interrupt service routine.</string>
+    <string name="interrupt21"><b>Example</b> TRAP, RST7.5, RST6.5, RST5.5,INTA.</string>
+
+    //project addressing mode(topics)
+    <string name="adrmod1"><u>8085 addressing mode</u></string>
+    <string name="adrmod2"> These are the instructions used to transfer the data from one register to another register,from the memory to the register, and from the register to the memory without any alteration in the content.</string>
+    <string name="adrmod3"> Addressing modes in 8085 is classified into 5 groups</string>
+    <string name="adrmod4">1. Immediate addressing mode</string>
+    <string name="adrmod5"> In this mode, the 8/16-bit data is specified in the instruction itself as one of its operand</string>
+    <string name="adrmod6"> Example</string>
+    <string name="adrmod7"> MVI A,30H (30H is copied into the register A)</string>
+    <string name="adrmod8"> ADI 30H (30H is added to content of accumulator)</string>
+    <string name="adrmod9">2. Register addressing mode</string>
+    <string name="adrmod10"> In this mode, the data is copied from one register to another.</string>
+    <string name="adrmod11"> Example</string>
+    <string name="adrmod12"> MOV B,A (The content of A is copied into the register B)</string>
+    <string name="adrmod13"> ADD C (The content of the register is added with the content of accumulator)</string>
+    <string name="adrmod14">3. Direct addressing mode</string>
+    <string name="adrmod15"> In this mode, the data is directly copied from the given address to the register.</string>
+    <string name="adrmod16"> Example</string>
+    <string name="adrmod17"> LDA 3000H (The content at the location 3000H is copied to the register A)</string>
+    <string name="adrmod18"> IN 00H (Read data from 00H port)</string>
+    <string name="adrmod19">4. Indirect addressing mode</string>
+    <string name="adrmod20"> In this mode,the data is transferred from one register to another by using the address pointed by the register</string>
+    <string name="adrmod21"> Example</string>
+    <string name="adrmod22"> MOV A,M (Data is transferred from the memory location pointed by the register to the accumulator)</string>
+    <string name="adrmod23"> LDAX B (Load accumulator with the address in register B-C)</string>
+    <string name="adrmod24">5. Implied addressing mode</string>
+    <string name="adrmod25"> This mode does not require any operand,the data is specified by the opcode itself.</string>
+    <string name="adrmod26"> Example</string>
+    <string name="adrmod27"> CMP (Complement accumulator)</string>
+    <string name="adrmod28"> RAL (Rotate accumulator left)</string>
+
+
+    //Data Transfer Instruction Set
+
+
+    <string name="d1">
+        <p>
+            <b>
+                MVI R,DATA:(Move immediate data to register)
+            </b>
+        </p>
+
+    </string>
+
+    <string name="d2">
+        <p>
+            <b>MOV R1,R2:(Move the content of one register to another register)</b>
+        </p>
+    </string>
+
+    <string name="d3">
+        <p>
+            <b>
+                LXI Rp,16-bit DATA:(Load register-pair immediately)
+            </b>
+        </p>
+    </string>
+
+    <string name="d4">
+        <p>
+            <b>
+                MOV R,M:(Move the content of memory to register)
+            </b>
+        </p>
+    </string>
+
+    <string name="d5">
+        <p>
+            <b>
+                MOV M,R:(Move the content of register to memory)
+            </b>
+        </p>
+    </string>
+
+    <string name="d6">
+        <p>
+            <b>
+                LDA Address:(Load accumulator direct)
+            </b>
+        </p>
+    </string>
+
+    <string name="d7">
+        <p>
+            <b>
+                STA Address:(Store accumulator direct)
+            </b>
+        </p>
+    </string>
+
+    <string name="d8">
+        <p>
+            <b>
+                MVI M,DATA:(Move immediate data to memory)
+            </b>
+        </p>
+    </string>
+
+    <string name="d9">
+        <p>
+            <b>
+                LDAX Rp:(Load accumulator indirect)
+            </b>
+        </p>
+    </string>
+
+    <string name="d10">
+        <p>
+            <b>
+                STAX Rp:(Store accumulator indirect)
+            </b>
+        </p>
+    </string>
+
+
+    <string name="dataTransfer">
+        <item>
+            <p>
+            <b>
+                MVI R,DATA:(Move immediate data to register)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                MOV R1,R2:(Move the content of one register to another register)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                LXI Rp,16-bit DATA:(Load register-pair immediately)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+               MOV R,M:(Move the content of memory to register)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                 MOV M,R:(Move the content of register to memory)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+               LDA Address:(Load accumulator direct)
+            </b>
+        </p>
+        </item>
+
+        <item>
+            <p>
+            <b>
+                STA Address:(Store accumulator direct)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                LDAX Rp:(Load accumulator indirect)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                STAX Rp:(Store accumulator indirect)
+            </b>
+        </p>
+        </item>
+        <item>
+            <p>
+            <b>
+                MVI M,DATA:(Move immediate data to memory)
+            </b>
+        </p>
+        </item>
+
+    </string>
+
+
+
+
+
+    //Timing diagram(topics)
+    <string name="td1"> Timing Diagram of 8085</string>
+    <string name="td2">It is one of the best way to understand to process of micro-processor/controller. With the help of timing diagram we can understand the working of any system, step by step working of each instruction and its execution, etc.
+It is the graphical representation of process in steps with respect to time. The timing diagram represents the clock cycle and duration, delay, content of address bus and data bus, type of operation ie. Read/write/status signals.
+    </string>
+    <string name="td3">Important terms related to timing diagrams:</string>
+    <string name="td4"><u>1. Instruction cycle:</u> </string>
+    <string name="td5">This term is defined as the number of steps required by the cpu to complete the entire process ie. Fetching and execution of one instruction. The fetch and execute cycles are carried out in synchronization with the clock.</string>
+    <string name="td6"><u>2. Machine cycle:</u></string>
+    <string name="td7">It is the time required by the microprocessor to complete the operation of accessing the memory devices or I/O devices. In machine cycle various operations like opcode fetch, memory read, memory write, I/O read, I/O write are performed.</string>
+    <string name="td8"><u>3. T-state:</u> </string>
+    <string name="td9">Each clock cycle is called as T-states</string>
+    <string name="td10"> Timing Diagram</string>
+    <string name="td11">Opcode fetch:</string>
+    <string name="td12"> The microprocessor requires instructions to perform any particular action. In order to perform these actions microprocessor utilizes Opcode which is a part of an instruction which provides detail(ie. Which operation µp needs to perform) to microprocessor.</string>
+    <string name="td13">Memory Read:</string>
+    <string name="td14">Operation:</string>
+    <string name="td15">->It is used to fetch one byte from the memory.</string>
+    <string name="td16">->It requires 3 T-States.</string>
+    <string name="td17">->It can be used to fetch operand or data from the memory.</string>
+    <string name="td18">->During T1, A8-A15 contains higher byte of address. At the same time ALE is high. Therefore Lower byte of address A0-A7 is selected from AD0-AD7.</string>
+    <string name="td19">->Since it is memory ready operation, IO/M(bar) goes low.</string>
+    <string name="td20">->During T2 ALE goes low, RD(bar) goes low. Address is removed from AD0-AD7 and data D0-D7 appears on AD0-AD7.</string>
+    <string name="td21">->During T3, Data remains on AD0-AD7 till RD(bar) is at low signal.</string>
+    <string name="td22">Memory Write:</string>
+    <string name="td23">Operation:</string>
+    <string name="td24">->It is used to send one byte into memory.</string>
+    <string name="td25">->It requires 3 T-States.</string>
+    <string name="td26">->During T1, ALE is high and contains lower address A0-A7 from AD0-AD7</string>
+    <string name="td27">->A8-A15 contains higher byte of address.</string>
+    <string name="td28">->As it is memory operation, IO/M(bar) goes low.</string>
+    <string name="td29">->During T2, ALE goes low, WR(bar) goes low and Address is removed from AD0-AD7 and then data appears on AD0-AD7</string>
+    <string name="td30">->Data remains on AD0-AD7 till WR(bar) is low</string>
+    <string name="td31">IO Read:</string>
+    <string name="td32">Operation:</string>
+    <string name="td33">->It is used to fetch one byte from an IO port.
+</string>
+    <string name="td34">->It requires 3 T-States.</string>
+    <string name="td35">
+->During T1, The Lower Byte of IO address is duplicated into higher order address bus A8-A15.
+</string>
+    <string name="td36">->ALE is high and AD0-AD7 contains address of IO device.</string>
+    <string name="td37">->IO/M (bar) goes high as it is an IO operation.</string>
+    <string name="td38">->During T2, ALE goes low, RD (bar) goes low and data appears on AD0-AD7 as input from IO device.</string>
+    <string name="td39">
+->During T3 Data remains on AD0-AD7 till RD(bar) is low.
+</string>
+    <string name="td40">IO Write:</string>
+    <string name="td41">Operation:</string>
+    <string name="td42">->It is used to writ one byte into IO device.</string>
+    <string name="td43">->It requires 3 T-States.</string>
+    <string name="td44">->During T1, the lower byte of address is duplicated into higher order address bus A8-A15.</string>
+    <string name="td45">->ALE is high and A0-A7 address is selected from AD0-AD7.</string>
+    <string name="td46">->As it is an IO operation IO/M (bar) goes low.</string>
+    <string name="td47">->During T2, ALE goes low, WR (bar) goes low and data appears on AD0-AD7 to write data into IO device.</string>
+    <string name="td48">->During T3, Data remains on AD0-AD7 till WR(bar) is low.</string>
+
+
+    //Intro 8086(topics)
+    <string name="i1">Introduction of 8086 microprocessor</string>
+    <string name="i2">8086 Microprocessor is an enhanced version of 8085 Microprocessor that was designed by intel in 1976. It is a 16-bit Microprocessor having 20 address lines and 16 data lines that provide up to 1 MB storage. It consists of powerful instruction set, which provides operations like multiplication and division easily.</string>
+    <string name="i3">It supports two modes of operation, i.e. Maximum mode and Minimum mode. Maximum mode is suitable for system having multiple processors and minimum mode is suitable for system having a single processor.</string>
+    <string name="i4">Features of 8086</string>
+    <string name="i5">It has an instruction queue,which is capable of storing six instruction bytes from the memory resulting in faster processing.</string>
+    <string name="i6">It was the first 16 bit processor having 16 bit ALU, 16 bit registers, internal data bus, and 16 bit external data bus in faster processing.</string>
+    <string name="i7">It uses two stages of pipelining, i.e. Fetch Stage and Execute Stage,which improves performance.</string>
+    <string name="i8">Fetch stage can prefetch up to 6 bytes of instructions and stores them in the queue.</string>
+    <string name="i9">It has 256 vectored interrupts.</string>
+    <string name="i10">It consists of 29,000 transistors.
+    </string>
+
+    //comparison of 8085 and 8086(topics)
+    <string name="com1">Comparison of 8085 and 8086</string>
+    <string name="com2">1. Size:-</string>
+    <string name="com3">8085 is 8 bit microprocessor whereas 8086 is 16 bit microprocessor.</string>
+    <string name="com4">2. Address Bus:-</string>
+    <string name="com5">8085 has 16 bit address bus and 8086 has 20 bit address bus.</string>
+    <string name="com6">3. Memory:-</string>
+    <string name="com7">8085 can access up to 2^16=64 kb of memory whereas 8086 can access up to 2^20= 1 MB of memory.</string>
+    <string name="com8">4. Instruction Queue:-</string>
+    <string name="com9">8085 doesn\'t have an instruction queue whereas 8086 has instruction queue.</string>
+    <string name="com10">5. Pipelining:-</string>
+    <string name="com11">8085 does not support pipelined architecture whereas 8086 supports pipelined architecture.</string>
+    <string name="com12">6. Multiprocessing Support:-</string>
+    <string name="com13">8085 does not support multiprocessing whereas 8086 supports.</string>
+    <string name="com14">7. I/O</string>
+    <string name="com15">8085 can address 2^8 = 256 I/O and 8086 can access 2^16 = 65,536 I/O </string>
+    <string name="com16">8. Arithmetic Support:-</string>
+    <string name="com17">8085 only supports integer and decimal whereas 8086 supports integer, decimal and ASCII arithmetic.</string>
+    <string name="com18">9. Multiplication and Division:-</string>
+    <string name="com19">8085 does not support whereas 8086 supports.</string>
+    <string name="com20">10. Operating Modes:-</string>
+    <string name="com21">8085 supports only single operating mode whereas 8086 operates in two modes.</string>
+    <string name="com22">11. External Hardware:- </string>
+    <string name="com23">8085 requires less external hardware whereas 8086 requires more external hardware.</string>
+    <string name="com24">12. Cost:-</string>
+    <string name="com25">The cost of 8085 is low and 8086 is high.</string>
+    <string name="com26">13. Memory Segmentation:-</string>
+    <string name="com27">In 8085, memory space is not segmented but in 8086, memory space is segmented.</string>
+    <string name="com28">There are some of the difference mentioned below</string>
+
+
+
+    /program 7
+    <string name="program7">program 7:</string>
+    <string name="statement7"><b>Statement:</b> 8085 program to add two 8 bit numbers without carry.</string>
+    <string name="ins_7_1">MVI</string>
+    <string name="ins_7_2">MVI</string>
+    <string name="ins_7_3">ADD</string>
+    <string name="ins_7_4">HLT</string>
+    <string name="opc_7_1">A,32H</string>
+    <string name="opc_7_2">D,11H</string>
+    <string name="opc_7_3">D</string>
+    <string name="remark_7_1">[Store 32H in the Accumulator]</string>
+    <string name="remark_7_2">[Store 11H in D]</string>
+    <string name="remark_7_3">[Add D with A and store the result in A]</string>
+    <string name="remark_7_4">[Terminate the program]</string>
+
+
+
+
+    //program 8
+    <string name="program8">program 8:</string>
+    <string name="statement8"><b>Statement:</b> 8085 program to add two 8 bit numbers with carry.</string>
+    <string name="ins_8_1">MVI</string>
+    <string name="ins_8_2">LDA</string>
+    <string name="ins_8_3">MOV</string>
+    <string name="ins_8_4">LDA</string>
+    <string name="ins_8_5">ADD</string>
+    <string name="ins_8_6">JNC</string>
+    <string name="ins_8_7">INR</string>
+    <string name="ins_8_8">STA</string>
+    <string name="ins_8_9">MOV</string>
+    <string name="ins_8_10">STA</string>
+    <string name="ins_8_11">HLT</string>
+    <string name="opc_8_1">C,00H</string>
+    <string name="opc_8_2">2030H</string>
+    <string name="opc_8_3">B,A</string>
+    <string name="opc_8_4">2031H</string>
+    <string name="opc_8_5">B</string>
+    <string name="opc_8_6">NEXT</string>
+    <string name="opc_8_7">C</string>
+    <string name="opc_8_8">2052H</string>
+    <string name="opc_8_9">A,C</string>
+    <string name="opc_8_10">2053H</string>
+    <string name="remark_8_1">[Store 0 in C]</string>
+    <string name="remark_8_2">[Load the content at 2030H into A]</string>
+    <string name="remark_8_3">[Save the content into B.]</string>
+    <string name="remark_8_4">[Load the content at 2031H into A.]</string>
+    <string name="remark_8_5">[Add B with A]</string>
+    <string name="remark_8_6">[Jump to NEXT on no carry]</string>
+    <string name="remark_8_7">[Increment C]</string>
+    <string name="remark_8_8">[Store the result]</string>
+    <string name="remark_8_9">[Move carry from C to A]</string>
+    <string name="remark_8_10">[Store the carry]</string>
+    <string name="remark_8_11">[Terminate the program.]</string>
+
+    //program 10
+    <string name="program10">program 10:</string>
+    <string name="statement10"><b>Statement:</b> 8085 program to subtract two 8 bit numbers.</string>
+    <string name="ins_10_1">MVI</string>
+    <string name="ins_10_2">LDA</string>
+    <string name="ins_10_3">MOV</string>
+    <string name="ins_10_4">LDA</string>
+    <string name="ins_10_5">SUB</string>
+    <string name="ins_10_6">JNC</string>
+    <string name="ins_10_7">CMA</string>
+    <string name="ins_10_8">INR</string>
+    <string name="ins_10_9">INR</string>
+    <string name="ins_10_10">STA</string>
+    <string name="ins_10_11">MOV</string>
+    <string name="ins_10_12">STA</string>
+    <string name="ins_10_13">HLT</string>
+    <string name="opc_10_1">C,00H</string>
+    <string name="opc_10_2">2000H</string>
+    <string name="opc_10_3">B,A</string>
+    <string name="opc_10_4">2001</string>
+    <string name="opc_10_5">B</string>
+    <string name="opc_10_6">NEXT</string>
+    <string name="opc_10_8">A</string>
+    <string name="opc_10_9">C</string>
+    <string name="opc_10_10">2002H</string>
+    <string name="opc_10_11">A,C</string>
+    <string name="opc_10_12">2003</string>
+    <string name="remark_10_1">[Initialize c to 00H]</string>
+    <string name="remark_10_2">[Load the value to Accumulator]</string>
+    <string name="remark_10_3">[Move the content of A to B register]</string>
+    <string name="remark_10_4">[Load the value to Accumulator]</string>
+    <string name="remark_10_5">[Subtract B with A]</string>
+    <string name="remark_10_6">[Jump to NEXT on no borrow]</string>
+    <string name="remark_10_7">[Complement A]</string>
+    <string name="remark_10_8">[Increment value in A]</string>
+    <string name="remark_10_9">[Increment value in register]</string>
+    <string name="remark_10_10">[Store the result]</string>
+    <string name="remark_10_11">[Move content of C to A]</string>
+    <string name="remark_10_12">[Store the result]</string>
+    <string name="remark_10_13">[Terminate the program]</string>
+
+    //program 9
+    <string name="program9">program 9:</string>
+    <string name="statement9"><b>Statement:</b> 8085 program to add two 16 bit numbers.</string>
+    <string name="ins_9_1">LHLD</string>
+    <string name="ins_9_2">XCHG</string>
+    <string name="ins_9_3">LHLD</string>
+    <string name="ins_9_4">MVI</string>
+    <string name="ins_9_5">DAD</string>
+    <string name="ins_9_6">JNC</string>
+    <string name="ins_9_7">INR</string>
+    <string name="ins_9_8">SHLD</string>
+    <string name="ins_9_9">MOV</string>
+    <string name="ins_9_10">STA</string>
+    <string name="ins_9_11">HLT</string>
+    <string name="opc_9_1">2000H</string>
+    <string name="opc_9_2">D</string>
+    <string name="opc_9_3">2002H</string>
+    <string name="opc_9_4">C,00H</string>
+    <string name="opc_9_5">D</string>
+    <string name="opc_9_6">NEXT</string>
+    <string name="opc_9_7">C</string>
+    <string name="opc_9_8">2004H</string>
+    <string name="opc_9_9">A,C</string>
+    <string name="opc_9_10">2006H</string>
+    <string name="remark_9_1">[Load H-L pair with address 2000H]</string>
+    <string name="remark_9_2">[Exchange H-L pair with D-E pair]</string>
+    <string name="remark_9_3">[Load H-L pair with address ]</string>
+    <string name="remark_9_4">[Move 0 to C]</string>
+    <string name="remark_9_5">[Add D-E pair with H-L pair]</string>
+    <string name="remark_9_6">[Jump to NEXT on no carry]</string>
+    <string name="remark_9_7">[Increment C]</string>
+    <string name="remark_9_8">[Store the result]</string>
+    <string name="remark_9_9">[Move carry from C to A]</string>
+    <string name="remark_9_10">[Store the carry]</string>
+    <string name="remark_9_11">[Terminate the program.]</string>
+
+
+    //program 11
+    <string name="program11">program 11:</string>
+    <string name="statement11"><b>Statement:</b> 8085 program to subtract two 16 bit numbers.</string>
+    <string name="ins_11_1">LHLD</string>
+    <string name="ins_11_2">XCHG</string>
+    <string name="ins_11_3">LHLD</string>
+    <string name="ins_11_4">MVI</string>
+    <string name="ins_11_5">MOV</string>
+    <string name="ins_11_6">SUB</string>
+    <string name="ins_11_7">STA</string>
+    <string name="ins_11_8">MOV</string>
+    <string name="ins_11_9">SBB</string>
+    <string name="ins_11_10">STA</string>
+    <string name="ins_11_11">HLT</string>
+
+    <string name="opc_11_1">3000H</string>
+    <string name="opc_11_3">3002H</string>
+    <string name="opc_11_4">C,00H</string>
+    <string name="opc_11_5">A,E</string>
+    <string name="opc_11_6">L</string>
+    <string name="opc_11_7">3004H</string>
+    <string name="opc_11_8">A,D</string>
+    <string name="opc_11_9">H</string>
+    <string name="opc_11_10">3005H</string>
+
+    <string name="remark_11_1">[Load H-L pair with address 3000H]</string>
+    <string name="remark_11_2">[Exchange H-L pair with D-E pair]</string>
+    <string name="remark_11_3">[Load H-L pair with address 3002H]</string>
+    <string name="remark_11_4">[Move 0 to C]</string>
+    <string name="remark_11_5">[Move LSB of first operand]</string>
+    <string name="remark_11_6">[Subtract both the values]</string>
+    <string name="remark_11_7">[Store the result]</string>
+    <string name="remark_11_8">[Subtract both the values]</string>
+    <string name="remark_11_9">[Store the result]</string>
+    <string name="remark_11_10">[Store the result]</string>
+    <string name="remark_11_11">[Terminate the program]</string>
+
+
+
+</resources>
